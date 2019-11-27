@@ -1,0 +1,144 @@
+/*
+ * Font Family used on Brookings.edu
+
+	- meta: 'franklin-gothic-urw', helvetica, sans-serif;
+	- heading: 'franklin-gothic-urw-cond' helvetica, sans-serif;
+	- body: 'PT Serif', Times, serif;
+ */
+
+
+/* -- Small Reset -- */
+
+.representation-interactive {
+    box-sizing: border-box
+}
+
+.representation-interactive *,
+.representation-interactive *::before,
+.representation-interactive *::after {
+    box-sizing: inherit
+}
+
+
+/* -- Layout -- */
+
+.representation-interactive {
+    /* max-width: 1000px; */
+    margin: 2em auto;
+    width: 90vw;
+    max-width: 50em;
+    font-family: 'franklin-gothic-urw', helvetica, sans-serif;
+    /* meta */
+    line-height: 1;
+}
+
+.representation-interactive p {
+    /* max-width: 1000px; */
+    font-family: 'franklin-gothic-urw', helvetica, sans-serif;
+    font-size: 1.125em;
+    /* meta */
+    line-height: 1;
+}
+
+.representation-interactive p.header-lower {
+    /* max-width: 1000px; */
+    font-family: 'franklin-gothic-urw', helvetica, sans-serif;
+    font-size: 0.6em;
+    /* meta */
+    line-height: 1;
+}
+
+.representation-interactive-footer {
+    /* max-width: 1000px; */
+    margin: 2em auto;
+    width: 90vw;
+    max-width: 50em;
+    font-family: 'franklin-gothic-urw', helvetica, sans-serif;
+    /* meta */
+    line-height: 1;
+}
+
+.representation-interactive-footer p {
+    font-family: 'franklin-gothic-urw', helvetica, sans-serif;
+    font-size: smaller;
+    /* meta */
+    line-height: 1;
+}
+
+.representation-interactive-footer p img {
+    float: right;
+    /* meta */
+    line-height: 1;
+}
+
+#representation-interactive-div .active {
+    color: blue;
+}
+
+#representation-interactive-div div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 230px;
+    height: 35px;
+    padding: 2px;
+    font-size: 10px;
+    color: white;
+    background: #FFFFE0;
+    border: 1px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#representation-interactive-div .region {
+    fill: none;
+}
+
+#representation-interactive-div path {
+    stroke: white;
+    stroke-width: 0.5px;
+}
+
+#representation-interactive-div .city {
+    font: 10px sans-serif;
+    font-weight: bold;
+}
+
+#representation-interactive-div .legend {
+    font-size: 12px;
+}
+
+#representation-interactive-div .loader {
+    margin: 2em auto;
+    margin-top: 16em;
+    width: 90vw;
+    max-width: 60em;
+    font-family: "franklin-gothic-urw", helvetica, sans-serif;
+    /* meta */
+    line-height: 1;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #7e0000;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
